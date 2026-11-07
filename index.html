@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" translate="no" class="notranslate">
 <head>
 <meta charset="UTF-8">
+<meta name="google" content="notranslate">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>IFTKASA GARAGE</title>
 <link rel="preconnect" href="https://firebasestorage.googleapis.com" crossorigin>
@@ -406,9 +407,62 @@ b,span,p,div{overflow-wrap:break-word;word-break:break-word;}
  .typegrid{grid-template-columns:1fr}
 }
 </style>
+
+<style id="ift-fix">
+header.top,nav.bottom{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+header.top{background:rgba(7,11,22,.97)!important}
+nav.bottom{background:rgba(9,13,26,.98)!important}
+.hero2{animation:none!important;background-size:100% 100%,100% 100%,auto!important}
+.hero2 .h-img{animation:none!important}
+.product .fav,.gcnt{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.product{content-visibility:visible!important;contain:none!important;box-shadow:none!important}
+.grid2{align-items:stretch}
+.grid2>.product{display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.product .img{flex:none;width:100%;aspect-ratio:1/1!important;height:auto!important;border-radius:14px;overflow:hidden;background:#0a1228}
+.product .img img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0!important}
+.product b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;line-height:1.3;margin-top:2px}
+.product .sub{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.product .price{margin-top:auto;padding-top:4px}
+.product .addcart{margin-top:8px;flex:none}
+.product .tag{max-width:70%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row2 img{image-rendering:auto;-webkit-backface-visibility:hidden;transform:translateZ(0)}
+.row2::after{background:linear-gradient(to right,rgba(7,11,22,.82) 0%,rgba(7,11,22,.4) 48%,rgba(7,11,22,0) 100%)!important}
+html[dir=rtl] .row2::after{background:linear-gradient(to left,rgba(7,11,22,.82) 0%,rgba(7,11,22,.4) 48%,rgba(7,11,22,0) 100%)!important}
+.row2{height:150px!important}
+
+.chips.catrow{gap:10px;padding:2px 2px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips.catrow::-webkit-scrollbar{display:none}
+.chip.cc{display:flex;flex-direction:column;align-items:center;gap:6px;width:78px;padding:8px 4px 7px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);white-space:normal;text-align:center;font-size:11.5px;line-height:1.25;font-weight:700}
+.chip.cc .cimg{width:54px;height:54px;border-radius:50%;overflow:hidden;background:#0a1228;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;flex:none}
+.chip.cc .cimg img{width:100%;height:100%;object-fit:cover;display:block}
+.chip.cc .cimg b{font-size:20px;color:var(--cyan)}
+.chip.cc span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:100%}
+.chip.cc.active{background:rgba(0,200,255,.1);color:var(--text);border:1.5px solid var(--cyan);font-weight:800;box-shadow:0 0 0 1px var(--cyan) inset}
+.chip.cc.active .cimg{border-color:var(--cyan)}
+.chips.sub{gap:8px;padding-bottom:10px;scrollbar-width:none}
+.chips.sub::-webkit-scrollbar{display:none}
+.chips.sub .chip{padding:8px 16px;border-radius:999px;font-size:12.5px;font-weight:700;min-height:0}
+.chips.sub .chip.active{box-shadow:0 2px 10px rgba(0,200,255,.25)}
+
+.chip.cc{flex-direction:row!important;width:auto!important;gap:8px!important;padding:5px 14px 5px 5px!important;border-radius:999px!important;font-size:13px!important;white-space:nowrap!important;box-shadow:none!important}
+.chip.cc .cimg{width:30px!important;height:30px!important;border-width:1px!important}
+.chip.cc .cimg b{font-size:14px!important}
+.chip.cc span{display:inline!important;-webkit-line-clamp:unset!important;white-space:nowrap}
+.chip.cc.active{background:var(--grad)!important;color:#06121f!important;border-color:transparent!important;box-shadow:none!important}
+.chip.cc.active .cimg{border-color:rgba(6,18,31,.4)!important}
+html[dir=rtl] .chip.cc{padding:5px 5px 5px 14px!important}
+.catban{position:relative;height:96px;border-radius:18px;overflow:hidden;margin:4px 0 12px;background:linear-gradient(135deg,#0d1b3a,#0a1228);border:1px solid var(--line);isolation:isolate;display:flex;align-items:center}
+.catban img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45;z-index:0;filter:saturate(1.1)}
+.catban::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(7,11,22,.92),rgba(7,11,22,.35))}
+html[dir=rtl] .catban::after{background:linear-gradient(to left,rgba(7,11,22,.92),rgba(7,11,22,.35))}
+.catban .cb-t{position:relative;z-index:2;padding:0 18px;display:flex;flex-direction:column;gap:4px}
+.catban .cb-t b{font-size:18px;font-weight:800;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.catban .cb-t span{font-size:12.5px;font-weight:700;color:var(--cyan)}
+.grid2{gap:10px}
+</style>
 </head>
-<body>
-<div class="app" id="app"></div>
+<body translate="no" class="notranslate">
+<div class="app notranslate" id="app" translate="no"></div>
 <div id="splash" onclick="enterStore()">
   <div class="sp-stage" role="img" aria-label="IFTKASA GARAGE">
     <div class="sp-img"></div><div class="sp-glow"></div><div class="sp-shine"></div>
@@ -1037,7 +1091,7 @@ const mapP=d=>{const ok=d.price!==''&&d.price!=null&&!isNaN(d.price),n=Number(d.
 const mapM=d=>({id:d.id,n:[d.nEn||d.nAr,d.nAr||d.nEn],s:[d.sEn||'',d.sAr||d.sEn||''],ic:d.ic||'🔧',img:d.img||''});
 let _apT=0;function apply(imm){if(imm===true)return applyNow();clearTimeout(_apT);_apT=setTimeout(applyNow,70)}
 function applyNow(){
- if(!ready)return;const s=raw.settings||{};try{const _j=JSON.stringify({ready,raw});if(_j.length<4500000)localStorage.setItem(CK,_j)}catch(e){}
+ if(!ready)return;const s=raw.settings||{};clearTimeout(window._ckT);window._ckT=setTimeout(function(){try{const _j=JSON.stringify({ready,raw});if(_j.length<4500000)localStorage.setItem(CK,_j)}catch(e){}},2500);
  P.length=0;P.push(...(raw.products||[]).map(mapP));MODS.length=0;MODS.push(...(raw.mods||[]).map(mapM));
  FIBER.length=0;FIBER.push(...(raw.fiber||[]).map(d=>[d.en||d.ar,d.ar||d.en]));
  if(s.h1En||s.h1Ar)D.hero1=[s.h1En||D.hero1[0],s.h1Ar||D.hero1[1]];if(s.h2En||s.h2Ar)D.hero2=[s.h2En||D.hero2[0],s.h2Ar||D.hero2[1]];
@@ -1117,11 +1171,14 @@ function watchMore(){if(_mo){_mo.disconnect();_mo=null}const s=document.getEleme
  _mo=new IntersectionObserver(es=>{if(!es.some(e=>e.isIntersecting))return;const o=state.lim||24;state.lim=o+24;if(g)g.insertAdjacentHTML('beforeend',pgrid(o));watchMore()},{rootMargin:'700px'});_mo.observe(s)}
 {const _r=render;render=function(){const r=_r.apply(this,arguments);if(state.view=='list')watchMore();else if(_mo){_mo.disconnect();_mo=null}return r}}
 {const _g=go;go=function(v){if(v==='list'&&state.view!=='list')state.lim=24;return _g.apply(this,arguments)}}
+const catIc=k=>{const p=P.find(p=>(p.img||p.thumb)&&(p.cat==k||(p.cat||'').indexOf(k+' > ')==0));return p?`<i class="cimg"><img src="${esc(p.thumb||p.img)}" loading="lazy" decoding="async" alt=""></i>`:`<i class="cimg"><b>${esc(String(x(SET.cats.find(c=>c[0]==k)||[k,k])).charAt(0))}</b></i>`};
+const catBan=()=>{const c=state.cat||'';if(!c)return'';const tk=c.split(' > ')[0],top=SET.cats.find(k=>k[0]==tk);if(!top)return'';const sub=c.indexOf(' > ')>0?c.split(' > ')[1]:'';const n=P.filter(p=>p.cat==c||(p.cat||'').indexOf(c+' > ')==0).length;const pp=P.find(p=>(p.img||p.thumb)&&(p.cat==c||(p.cat||'').indexOf(c+' > ')==0));
+ return `<div class="catban">${pp?`<img src="${esc(pp.img||pp.thumb)}" alt="" decoding="async">`:''}<div class="cb-t"><b>${esc(x(top))}${sub?' · '+esc(sub):''}</b><span>${n} ${L('products','منتج')}</span></div></div>`};
 const subChips=()=>{const c=state.cat||'';if(!c)return'';const top=SET.cats.find(k=>c==k[0]||c.indexOf(k[0]+' > ')==0);if(!top||!top[2]||!top[2].length)return'';const q=v=>esc(v).replace(/'/g,'');
  return `<div class="chips sub"><div class="chip ${c==top[0]?'active':''}" onclick="state.cat='${q(top[0])}';state.lim=24;render()">${L('All','الكل')}</div>${top[2].map(s=>{const v=top[0]+' > '+s[0];return `<div class="chip ${c==v?'active':''}" onclick="state.cat='${q(v)}';state.lim=24;render()">${esc(x(s))}</div>`}).join('')}</div>`};
 list=()=>`<main>${back('home')}<h2 style="font-size:16px;margin-bottom:12px">${t('accTitle')}</h2>
 <div class="sbox"><span class="si">🔍</span><input type="text" placeholder="${esc(t('searchPh'))}" value="${esc(state.q||'')}" style="margin-bottom:10px" oninput="state.q=this.value;renderList()"></div>
-<div class="chips"><div class="chip ${state.cat?'':'active'}" onclick="state.cat='';state.lim=24;render()">${L('All Products','كل المنتجات')}</div>${SET.cats.map(k=>`<div class="chip ${state.cat==k[0]||(state.cat||'').indexOf(k[0]+' > ')==0?'active':''}" onclick="state.cat='${esc(k[0]).replace(/'/g,'')}';state.lim=24;render()">${esc(x(k))}</div>`).join('')}</div>${subChips()}
+<div class="chips catrow"><div class="chip cc ${state.cat?'':'active'}" onclick="state.cat='';state.lim=24;render()"><i class="cimg"><b>★</b></i><span>${L('All Products','كل المنتجات')}</span></div>${SET.cats.map(k=>`<div class="chip cc ${state.cat==k[0]||(state.cat||'').indexOf(k[0]+' > ')==0?'active':''}" onclick="state.cat='${esc(k[0]).replace(/'/g,'')}';state.lim=24;render()">${catIc(k[0])}<span>${esc(x(k))}</span></div>`).join('')}</div>${catBan()}${subChips()}
 <div class="grid2" id="pgrid">${pgrid()}</div><div id="pmore" style="display:none;height:60px;text-align:center;color:var(--muted);font-size:12px;padding:18px 0">…</div></main>`;
 window.shareP=()=>{const p=P[state.product],u=location.href.split('#')[0]+'#p='+encodeURIComponent(pk(p));if(navigator.share)navigator.share({title:x(p.n),text:x(p.n),url:u}).catch(()=>{});else{try{navigator.clipboard.writeText(u)}catch(e){}alert(L('Link copied','تم نسخ الرابط'))}};
 window.notifyMe=()=>{const p=P[state.product],n=prompt(L('Your name','اسمك'),state.cName||''),ph=n&&prompt(L('Your phone','رقم موبايلك'),state.cPhone||'');if(!n||!ph)return;state.cName=n;state.cPhone=ph;
@@ -1293,10 +1350,10 @@ let stWarned=0;const stFail=e=>{console.error('Firebase Storage upload failed:',
 async function putImg(src,folder,strict){const p='catalog/'+folder+'/'+rid();
  try{await window.stReady;if(!firebase.storage)throw new Error('Storage SDK missing');const [fb,tb]=await Promise.all([toBlob(src,1600,.86),toBlob(src,900,.84)]);const [u,t]=await Promise.all([stPut(fb,p+'.'+EXT[fb.type]),stPut(tb,p+'_t.'+EXT[tb.type])]);return{u,t,v:2}}
  catch(e){if(strict)throw e;stFail(e);const [u,t]=await Promise.all([toData(src,640,.55),toData(src,240,.5)]);if(!u)throw new Error('read');return{u,t:t||u}}}
-async function putBlob(src,folder,mx,strict){
- try{await window.stReady;if(!firebase.storage)throw new Error('Storage SDK missing');const b=await toBlob(src,mx,.8);return await stPut(b,folder+'/'+rid()+'.'+EXT[b.type])}
+async function putBlob(src,folder,mx,strict,qq){
+ try{await window.stReady;if(!firebase.storage)throw new Error('Storage SDK missing');const b=await toBlob(src,mx,qq||.8);return await stPut(b,folder+'/'+rid()+'.'+EXT[b.type])}
  catch(e){if(strict)throw e;stFail(e);const d=await toData(src,Math.min(mx,800),.6);if(!d)throw new Error('read');return d}}
-const put=f=>putBlob(f,'catalog/site',1200);
+const put=f=>putBlob(f,'catalog/site',1800,0,.92);
 const delUrl=u=>{try{if(window.firebase&&firebase.storage&&/^https:\/\/(firebasestorage|storage)\.googleapis\.com\//.test(u))ST_.refFromURL(u).delete().catch(()=>{})}catch(e){}};
 const lst=v=>String(v||'').split(/\||\n|,(?=\s*(?:https?:|data:))/).map(s=>s.trim()).filter(Boolean);
 const upW=(k,v,m)=>`<div class="up"><input type="hidden" id="f_${k}" value="${esc(v)}" data-m="${m?1:0}"><label class="dz" ondragover="event.preventDefault();this.classList.add('ov')" ondragleave="this.classList.remove('ov')" ondrop="event.preventDefault();this.classList.remove('ov');ADM.ups('${k}',event.dataTransfer.files)"><input type="file" accept="image/*" ${m?'multiple':''} hidden onchange="ADM.ups('${k}',this.files);this.value=''"><span class="dzi">📤</span><b>Click to choose ${m?'photos':'a photo'}</b><small>or drag &amp; drop here · resized automatically</small></label><div class="pv" id="pv_${k}"></div></div>`;
